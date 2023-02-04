@@ -22,4 +22,8 @@
 - docker network ls ---> lista as redes
 - docker network prune ---> remove as rede que não estão sendo usada
 - docker network connect minharede nome_container ---> conecta a rede minharede com container passado
+- docker-compose up ---> Sobi os container
+- docker-compose down ---> derruba os container
+- docker-compose up -d ---> Sobi os container sem travar o terminal
+- docker-compose up -d --build ---> Sobi os container e caso tenha alteração em algum arquivo Dockerfile o '--build' recriar as imagens
 
