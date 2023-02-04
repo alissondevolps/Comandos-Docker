@@ -14,3 +14,12 @@
 - docker rm nome_container -f ---> remover o container forçando, mesmo sem dar stop para parar
 - docker exec -it nginx bash ---> executa o bash já no container criado
 - docker volume prune ---> mata tudo que não está sendo usado nos volumes
+- docker pull php ---> Baixa a imagem do php
+- docker rmi php ---> remove a imagem do php
+- docker build -t nome_da_imagem . ---> Executa o dockerfile no diretorio atual com o nome especifico, pois a tag 't' foi passada
+- docker ps -a -q ---> Vai listar só os IDsdos container
+- docker rm $(docker ps -a -q) -f ---> Pega todos os IDs dos container e remove
+- docker network ls ---> lista as redes
+- docker network prune ---> remove as rede que não estão sendo usada
+- docker network connect minharede nome_container ---> conecta a rede minharede com container passado
+
